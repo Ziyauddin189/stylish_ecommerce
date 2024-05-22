@@ -1,0 +1,158 @@
+name: stylish_ecommerce
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # discover the state of the network (WiFi & mobile/cellular) connectivity on Android and iOS.
+  connectivity_plus: ^5.0.1
+  # load and cache network images. Can also be used with placeholder and error widgets.
+  cached_network_image: ^3.3.1
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  # Approximate how your Flutter app looks and performs on another device.
+  device_preview: ^1.1.0
+  #HTTP networking package
+  dio: ^5.3.3
+  # state management package
+  flutter_bloc: ^8.1.3
+  #Customize Flutter's default white native splash screen with background color and splash image. Supports dark mode, full screen, and more.
+  flutter_native_splash: ^2.3.7
+  flutter_localizations:
+    sdk: flutter
+  #A simple yet fully customizable ratingbar for flutter which also include a rating bar indicator, supporting any fraction of rating.
+  flutter_rating_bar: ^4.0.1
+  #A flutter plugin for adapting screen and font size.Guaranteed to look good on different models  
+  flutter_screenutil: ^5.9.0
+  #An SVG rendering and widget library for Flutter, which allows painting and displaying Scalable Vector Graphics 1.1 files.
+  flutter_svg: ^2.0.9
+  # cubit state generator using source_gen 
+  freezed: ^2.4.5
+  #Annotations for the freezed code-generator. This package does nothing without freezed too.
+  freezed_annotation: ^2.4.1
+  # Dependency Injection helper
+  get_it: ^7.6.4
+  # Automatically organize your dart imports
+  import_sorter: ^4.6.0
+  # Defines the annotations used by json_serializable to create code for JSON serialization and deserialization.
+  json_annotation: ^4.8.1
+  # logs network calls in a pretty, easy to read format.
+  pretty_dio_logger: ^1.3.1
+  #webservice [http requests with dio] generator using source_gen 
+  retrofit: ^4.0.3
+  # reading and writing simple key-value pairs. Wraps NSUserDefaults on iOS and SharedPreferences on Android.
+  shared_preferences: ^2.2.2
+  # Customizable animated page indicator with a set of built-in effects.
+  smooth_page_indicator: ^1.1.0
+  #A collection of stylish bottom navigation bars like animated bottom bar and bubble bottom bar for flutter.
+  stylish_bottom_bar: ^1.0.3
+  # A widget that detects the visibility of its child and notifies a callback.
+  visibility_detector: ^0.4.0+2
+
+dev_dependencies:
+  #A build system for Dart code generation and modular compilation.
+  build_runner: ^2.4.6
+  #A non-interactive HTML documentation generator for Dart source code
+  dartdoc: any
+  # A package which simplifies the task of updating your Flutter app's launcher icon.
+  flutter_launcher_icons: ^0.13.1
+  #Recommended lints for Flutter apps, packages, and plugins to encourage good coding practices.
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+  #Automatically generate code for converting to and from JSON by annotating Dart classes.
+  json_serializable: ^6.7.1
+  #generator using source_gen [we use it with cubit state generation]
+  retrofit_generator: ^7.0.8
+
+
+flutter_native_splash:
+
+  color: "#ffffff"
+  image: assets/images/splash_screen.jpg
+
+  android_12:
+    image: assets/images/splash_android12.png
+    color: "#ffffff"
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  
+
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  fonts: 
+    - family: Montserrat
+      fonts: 
+        - asset: assets/fonts/MontserratRomanSemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/MontserratRomanMedium.ttf
+          weight: 500
+        - asset: assets/fonts/MontserratRomanRegular.ttf
+          weight: 400
+        - asset: assets/fonts/MontserratItalicThin.ttf
+          weight: 100
+        - asset: assets/fonts/MontserratRomanExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/MontserratRomanBold.ttf
+          weight: 700
+        - asset: assets/fonts/MontserratRegular.ttf
+          weight: 400
+        - asset: assets/fonts/MontserratSemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/MontserratMedium.ttf
+          weight: 500
+        - asset: assets/fonts/MontserratLight.ttf
+          weight: 300
+    - family: Libre Caslon Text
+      fonts: 
+        - asset: assets/fonts/LibreCaslonTextBold.ttf
+          weight: 700
+    - family: Poppins
+      fonts: 
+        - asset: assets/fonts/PoppinsRegular.ttf
+          weight: 400
+        - asset: assets/fonts/PoppinsSemiBold.ttf
+          weight: 600
+    - family: Roboto
+      fonts: 
+        - asset: assets/fonts/RobotoRomanMedium.ttf
+          weight: 500
+        - asset: assets/fonts/RobotoRegular.ttf
+          weight: 400
+        - asset: assets/fonts/RobotoRomanRegular.ttf
+          weight: 400
+    - family: Plus Jakarta Sans
+      fonts: 
+        - asset: assets/fonts/PlusJakartaSansSemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/PlusJakartaSansRomanMedium.ttf
+          weight: 500
